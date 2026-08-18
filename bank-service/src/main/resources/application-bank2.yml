@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: bank-service-2
+  datasource:
+    url: jdbc:sqlite:./data/bank2.db
+
+bank:
+  queue:
+    name: bank2.rpc.queue

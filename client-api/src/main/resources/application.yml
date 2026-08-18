@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: client-api
+
+services:
+  psp:
+    base-url: http://localhost:8082
+    connect-timeout-ms: 3000
+    read-timeout-ms: 15000

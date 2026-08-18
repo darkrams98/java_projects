@@ -1,0 +1,25 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: shaparak-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/shaparak_service_db
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    template:
+      reply-timeout: 8000
+
+shaparak:
+  routing:
+    default-queue: bank1.rpc.queue
+    bin-map:
+      "603799": bank1.rpc.queue
+      "589210": bank1.rpc.queue
+      "627412": bank2.rpc.queue
+      "610433": bank2.rpc.queue

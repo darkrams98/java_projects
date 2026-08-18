@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: psp-service
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/psp_service_db
+
+services:
+  shaparak:
+    base-url: http://localhost:8083
+    connect-timeout-ms: 3000
+    read-timeout-ms: 12000

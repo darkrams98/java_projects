@@ -1,0 +1,17 @@
+spring:
+  main:
+    web-application-type: none
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    hikari:
+      maximum-pool-size: 1
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
